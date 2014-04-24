@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Bier vor vier!",
+  "version": "1.0",
+  "description": "Weil Bier.",
+  "icons": { "128": "image.png" },
+  "content_scripts": [
+    {
+      "matches": ["*://kannmanumdieuhrzeitschonnbierchentrinken.de/*"],
+      "js": ["main.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": ["script.js"]
+}
